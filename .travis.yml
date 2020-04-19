@@ -1,13 +1,11 @@
-#sudo: required -- depracated
+#sudo: required -- deprecated
 services:
   - docker
 
 language: node_js
 node_js:
   - "12.16.2"
-
-dist:
-  - linux
+ 
 
 before_install:
   - docker build -t dnsgom/docker-react -f Dockerfile.dev .
